@@ -44,9 +44,9 @@ function Dog(config){
   this.color = config.color;
   this.status = config.status;
   this.status = 'normal';
-  this.hungry = true;
-  if(config.hungry){
-    this.hungry = config.hungry
+  this.hungry = config.hungry;
+  if(config.hungry === undefined){
+    this.hungry = true
   }
 };
 
